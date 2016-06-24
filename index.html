@@ -28,6 +28,17 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        
+        ga('create', 'UA-39970369-3', 'auto');
+        ga('send', 'pageview');
+    </script>
+<!-- End Google Analytics -->
 
 </head>
 
@@ -56,10 +67,10 @@
                         <a class="page-scroll" href="#about">Como funciona</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Prestamos</a>
+                        <a class="page-scroll" href="#download" onclick="ga('send', 'event', 'Links', 'click', 'prestamo');">Prestamos</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Inversiones</a>
+                        <a class="page-scroll" href="#contact" onclick="ga('send', 'event', 'Links', 'click', 'inversion');">Inversiones</a>
                     </li>
                 </ul>
             </div>
@@ -79,7 +90,7 @@
                             <br>Terminos fijos
                             <br>Recibe tu prestamo en minutos
                         </p>
-                        <p><a href="#" class="btn btn-default btn-lg">Pide un prestamo</a></p>
+                        <p><a href="#" class="btn btn-default btn-lg" onclick="ga('send', 'event', 'Buttons', 'click', 'prestamo-intro');">Pide un prestamo</a></p>
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
@@ -110,7 +121,7 @@
                     <h2>Intereses bajos para todos</h2>
                     <p>consolida tus deudas, ve de vacaciones, compra un regalo a tu pareja</p>
                     <p>Con tasas de interes tan bajas, no tienes excusa</p>
-                    <a href="#" class="btn btn-default btn-lg">Aplica para un prestamo</a>
+                    <a href="#" class="btn btn-default btn-lg" onclick="ga('send', 'event', 'Buttons', 'click', 'prestamo');">Aplica para un prestamo</a>
                 </div>
             </div>
         </div>
@@ -177,7 +188,7 @@
             </div>
           </div>
             <div class="col-lg-8 col-lg-offset-2">
-                <a href="#" class="btn btn-default btn-lg">Invierte ya</a>
+                <a href="#" class="btn btn-default btn-lg" onclick="ga('send', 'event', 'Buttons', 'click', 'inversion');">Invierte ya</a>
             </div>
         </div>
     </section>
