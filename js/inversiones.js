@@ -2,11 +2,11 @@ $(document).ready(setFirebase);
 
 function setFirebase() {
     var config = {
-        apiKey: "AIzaSyC_DFth0P7ZONo5H8LMsV04f9iFmlEwoxQ",
-        authDomain: "elmis-81b8f.firebaseapp.com",
+        apiKey: [api.key],
+        authDomain: "[auth.domain]",
         databaseURL: "https://elmis-81b8f.firebaseio.com",
         storageBucket: "elmis-81b8f.appspot.com",
-        messagingSenderId: "884585399306"
+        messagingSenderId: "[messenger.id]"
     };
     firebase.initializeApp(config);
 };
